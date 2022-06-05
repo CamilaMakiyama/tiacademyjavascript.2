@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --color-lightblue: #2196F3;
+    --color-blue: #3D5AFE;
+    --color-darkblue: #0D47A1;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+header {
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(to right, #0D47A1, #3D5AFE, #2196F3);
+    color: white;
+}
+header div {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header div h1 {
+    font-size: 3rem;
+}
+
+header i {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.material-icons {
+    width: 6.4rem;
+    height: 6.4rem;
+    background-color: white;
+    color: var(--color-lightblue);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div {
+    width: 32%;
+    height: 35rem;
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+main form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 1.2rem;
+}
+
+main form fieldset {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+main form fieldset label {
+    font-size: 1.5rem;
+}
+main form fieldset input {
+    height: 2.5rem;
+}
+
+form fieldset input#buscarCep {
+    width: 100%;
+    height: 2.9rem;
+    background-color: var(--color-lightblue);
+    border: none;
+    box-shadow: 0rem 0.2rem var(--color-blue);
+    border-radius: 0.2rem;
+    color: white;
+}
+form fieldset input#buscarCep:hover {
+    cursor: pointer;
+}
